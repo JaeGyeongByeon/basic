@@ -50,6 +50,27 @@ Phi = inv(s*eye(3)-A)
 G = C * Phi * B + D
 ```
 
+## P3.12
+---
+![image](https://github.com/JaeGyeongByeon/basic/assets/144103220/2bdbcfa5-bd83-4636-825a-7b032acddf94)
+
+```matlab
+syms s
+
+T = 8*(s+5)/(s^3+12*s^2+44*s+48)
+x = ilaplace(T)
+
+[n,d]=numden(T)
+num=sym2poly(n)
+den = sym2poly(d)
+[A,B,C,D] = tf2ss(num,den)
+
+Phi = inv(s*eye(3)-A)
+
+ilaplace (Phi)
+
+
+```
 ## P3.17
 
 ---
