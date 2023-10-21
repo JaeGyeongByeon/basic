@@ -3,8 +3,9 @@
 ## P3.1
 
 ---
+![Untitled 1](https://github.com/JaeGyeongByeon/basic/assets/144103220/0af25824-3ffe-411f-b092-3591936c7dd0)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/ad9fdd74-3741-4993-828d-2b3b572a4652/a1a6420e-b52e-46e4-a963-1b42b3d59859/Untitled.png)
+
 ```matlab
 syms s k M b
 
@@ -24,12 +25,14 @@ pretty (G)
 
 ---
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/ad9fdd74-3741-4993-828d-2b3b572a4652/5e4f7b8a-e273-4896-a342-1714ffdca499/Untitled.png)
+![image](https://github.com/JaeGyeongByeon/basic/assets/144103220/27fc3787-9851-4bc2-a529-2bc553483de8)
+
 ## P3.5
 
 ---
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/ad9fdd74-3741-4993-828d-2b3b572a4652/ebc13504-53a4-42e5-98f1-4f5cc0f25292/Untitled.png)
+![image](https://github.com/JaeGyeongByeon/basic/assets/144103220/4a05a84d-955d-4bfe-badb-3050ee1f3832)
+
 ```matlab
 clear 
 clc;
@@ -50,7 +53,8 @@ G = C * Phi * B + D
 ## P3.17
 
 ---
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/ad9fdd74-3741-4993-828d-2b3b572a4652/a146176c-d428-450e-b3a4-e39d8e61ff37/Untitled.png)
+![image](https://github.com/JaeGyeongByeon/basic/assets/144103220/c893cf61-3a6e-4b88-bf06-91d70a5fa1c2)
+
 손으로 문제 푸는 것이 불가능하기 때문에 매트랩 코드 이용
 
 ```matlab
@@ -67,4 +71,4 @@ Phi = inv(s*eye(3)-A);
 G = C * Phi * B + D
 ```
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/ad9fdd74-3741-4993-828d-2b3b572a4652/413fc6d7-b185-4253-b3f4-c5eaadb895e4/Untitled.png)
+![image](https://github.com/JaeGyeongByeon/basic/assets/144103220/eb3c8e9f-896e-4fff-b50e-9da58738c34d)
