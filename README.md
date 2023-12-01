@@ -1,95 +1,16 @@
-# 7주차/과제
+P4.8
 
-## P3.1
+![image](https://github.com/JaeGyeongByeon/basic/assets/144103220/a3b79b29-223c-45a4-9018-774499e2379e)
 
----
-![Untitled 1](https://github.com/JaeGyeongByeon/basic/assets/144103220/0af25824-3ffe-411f-b092-3591936c7dd0)
-
-
-```matlab
-syms s k M b
-
-A = [0,1;-k/M,-b/M]
-B = [0;1/M]
-C = [1,0];
-D = 0;
-
-Phi = inv(s*eye(2)-A);
-
-G = C * Phi * B + D;
-
-pretty (G)
-```
-
-## P3.3
 
 ---
 
-![image](https://github.com/JaeGyeongByeon/basic/assets/144103220/27fc3787-9851-4bc2-a529-2bc553483de8)
+P4.12
 
-## P3.5
-
----
-
-![image](https://github.com/JaeGyeongByeon/basic/assets/144103220/4a05a84d-955d-4bfe-badb-3050ee1f3832)
-
-```matlab
-clear 
-clc;
-
-syms s 
-
-Ts = (s+2)/(s^3+5*s^2-23*s+2)
-
-[num,den]=numden(Ts)
-n=sym2poly(num)
-d = sym2poly(den)
-[A,B,C,D] = tf2ss(n,d)
-
-Phi = inv(s*eye(3)-A)
-G = C * Phi * B + D
-```
-
-## P3.12
----
-![image](https://github.com/JaeGyeongByeon/basic/assets/144103220/2bdbcfa5-bd83-4636-825a-7b032acddf94)
-
-```matlab
-syms s
-
-T = 8*(s+5)/(s^3+12*s^2+44*s+48)
-x = ilaplace(T)
-
-[n,d]=numden(T)
-num=sym2poly(n)
-den = sym2poly(d)
-[A,B,C,D] = tf2ss(num,den)
-
-Phi = inv(s*eye(3)-A)
-
-ilaplace (Phi)
-
-
-```
-## P3.17
+![image](https://github.com/JaeGyeongByeon/basic/assets/144103220/a79b2606-e835-490b-bcd9-bfe71603a29b)
 
 ---
-![image](https://github.com/JaeGyeongByeon/basic/assets/144103220/c893cf61-3a6e-4b88-bf06-91d70a5fa1c2)
 
-손으로 문제 푸는 것이 불가능하기 때문에 매트랩 코드 이용
+P4.17
 
-```matlab
-clc
-clear
-
-syms s
-
-A = [1 1 -1;4 3 0;-2 1 10]
-B = [0;0;4];
-C = [1 0 0];
-D = 0;
-Phi = inv(s*eye(3)-A);
-G = C * Phi * B + D
-```
-
-![image](https://github.com/JaeGyeongByeon/basic/assets/144103220/eb3c8e9f-896e-4fff-b50e-9da58738c34d)
+![image](https://github.com/JaeGyeongByeon/basic/assets/144103220/7b1c9746-68e3-4386-9a7d-6082ca879e8a)
